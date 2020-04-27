@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Blind Guardian
+		</title>
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="header-content">
+			<header class="header">
+				<a href="index.html"><img src="img/logo.png" title="Logo Blind Guardian" alt="Logo Blind Guardian"></a>
+				<nav class="nav">
+					<ul>
+						<li>
+							<a href="index.html">Blind Guardian</a>
+						</li>
+						<li>
+							<a href="persona.html">Persona</a>
+						</li>
+						<li>
+							<a href="prototype.html">Protótipo</a>
+						</li>
+						<li>
+							<a href="team.html">Equipe</a>
+						</li>
+						<li>
+							<a href="form.html">Contato</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<div class="main-content">
+			<main class="main">
+				<h1>
+					Contato
+				</h1>
+				<form action="#" method="post">
+					<fieldset>
+						<legend class="legend">
+							Dados pessoais
+						</legend>
+						<label for="name">
+							Nome:<br>
+							<input type="text" name="name" id="name" maxlength="35" placeholder="Nome Sobrenome" required>
+						</label><br>
+						<label for="email">
+							E-mail:<br>
+							<input type="email" name="email" id ="email" maxlength="35" placeholder="email@dominio.com" required>
+						</label><br>
+						<label for="phone">
+							Telefone:<br>
+							<input type="tel" name="phone" id="phone" maxlength="13" placeholder="+__ (__) _____-____">
+						</label><br>
+						<legend>
+							Gênero:
+						</legend>
+						<label for="female">
+							<input type="radio" name="gender" id="female" value="Feminino">
+							Feminino
+						</label>
+						<label for="male">
+							<input type="radio" name="gender" id="male" value="Masculino">
+							Masculino
+						</label>
+						<label for="other">
+							<input type="radio" name="gender" id="other" value="Outro">
+							Outro
+						</label>
+						<legend for="age">Faixa etária:</legend>
+						<select id="age">
+							<option value="-1">Selecione sua faixa etária...</option>
+							<option value="0-12">Criança - até 12 anos</option>
+							<option value="13-24">Jovem - 13 à 24 anos</option>
+							<option value="25-64">Adulto - 25 à 64 anos</option>
+							<option value="65+">Idoso - a partir de 65 anos</option>
+						</select>
+						<legend>Mensagem:</legend>
+						<textarea maxlength="200"placeholder="Deixe sua mensagem, sugestão ou crítica... (Até 200 caracteres)"></textarea><br>
+						<small>
+							<input type="checkbox" name="checkbox" id="checkbox" checked>
+							<label for="checkbox">Desejo receber notificações de lançamentos e atualizações</label>
+						</small><br>
+						<div class="form-buttons">
+							<input type="reset" name="reset" id="reset" value="Limpar">
+							<input type="submit" name="submit" id="submit" value="Enviar" onclick="alert('Formulário enviado com sucesso!')">
+						</div>
+					</fieldset>
+				</form>
+			</main>
+		</div>
+		<footer class="footer">
+			<p>
+				<small>
+					Copyright &copy; Blind Guardian 2019
+				</small>
+			</p>
+		</footer>
+	</body>
+</html>
